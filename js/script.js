@@ -4,6 +4,44 @@
 
 
 
+function Dividir() {
+
+    
+    
+    // pegando os valores
+    const valor = parseFloat(document.getElementById("valor").value);
+    const pessoas = parseFloat(document.getElementById("pessoas").value);
+
+    // Check se e zero
+    if (isNaN(valor) || isNaN(pessoas)) {
+        document.getElementById("resul").innerHTML = "Por favor, insira números válidos.";
+        return;
+    }
+    if (pessoas === 0) {
+        document.getElementById("resul").innerHTML = "Não é possível dividir por zero.";
+        return;
+    }
+
+    // Perform division
+    const resultado = valor / pessoas;
+
+    // Display the result
+    document.getElementById("resul").innerHTML ="cada uma das "+ pessoas +" pessoas ira pagar R$: "+ resultado.toFixed(2);
+
+    const dialog = document.getElementById("dialog");
+   
+    dialog.showModal();
+
+    const fecharmodal=document.getElementById("fechar-modal"); 
+
+    fecharmodal.addEventListener('click',()=>{
+      dialog.close();
+    })
+}
+
+
+
+
 
 
 

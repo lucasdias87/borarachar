@@ -1,25 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
+
+
+@media screen and (max-width: 750px){
+    ialog{
+        width: 20%;
+        height: 10%;
+        scroll-behavior: smooth;
+        background-color: #3a3a3ac7;  
+        border-radius: 5%;
+        border-color: #d3c18b;
+        overflow: auto;
+      }
+       dialog::backdrop{
+        background-color:rgba(0, 0, 0, 0.603);
+       }
 
 
 
 
+
+    }
 
 
 html{
+    margin-top: 5%;
     scroll-behavior: smooth;
+    background-color: #3a3a3ac7;
    
  
  }
  
 
+h1{
+    color: white;
+}
+h2{
+    color: #d3c18b;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: x-large;
+    
+}
+h3{
+    font-family: 'Fira Sans', sans-serif;
+    color: aliceblue;
+    font-size: larger;
+    margin: 1%;
+}
 
+input{
+    height: 2rem;
+    font-size: large;
+    font-family: 'Fira Sans', sans-serif;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s;
+    
+
+}
+
+input:hover{
+    
+    color:black;
+    outline: none;
+    text-decoration: none;
+    font-size: large;
+   
+   
+    box-shadow: 0px 5px 10px #d3c18b;
+}
+placeholder{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: larger;
+    color:#d3c18b;
+    outline: none;
+    text-decoration: none;
+
+}
+
+button{
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: x-large;
+    font-size: x-large;
+    background-color: black;
+    color: white;
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    
+}
+button:hover{
+    transition: background-color 0.3s;
+    background-color: #d3c18b;
+    color: black;
+}
+
+.img{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 5rem; 
+}
+dialog{
+    width: 30%;
+    height: 30%;
+    scroll-behavior: smooth;
+    background-color: #3a3a3ac7;  
+    border-radius: 5%;
+    border-color: #d3c18b;
+    overflow: auto;
+  }
+   dialog::backdrop{
+    background-color:rgba(0, 0, 0, 0.603);
+   }
 
 .center{
     text-align:center ;
     justify-content: center;
     align-items: center;
-    margin: 10% ;
+    margin: 0% ;
 }
-
 
 /*animaao do h1*/
 .cssanimation, .cssanimation span {

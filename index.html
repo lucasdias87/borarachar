@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
     <script src="js/script.js" defer></script>
@@ -12,6 +12,23 @@
     <div class="center">
     <h1 class="cssanimation lePeek sequence" >BORA RACHAR</h1>
     <h2>Dividir a conta com amigos ou familiares é uma das maneiras mais agradáveis de fortalecer
-       os laços e compartilhar momentos especiais juntos.</h2>
+       os laços e compartilhar momentos especiais juntos!</h2>
+       <img class="img" src="img/pago.png" alt="imagem de uma conta ">
+       <h3>Adicione o Valor a ser dividido </h3>
+    <input alt=" campo para incerir o valor a ser dividido" type="number"id="valor" placeholder="R$">
+    <h3>Adicione o numero de pessoas </h3>
+    <input alt=" campo para incerir o numero de pessoas"type="number"id="pessoas" placeholder="numero de pessoas"  >
+    <P></P>
+    <button onclick="Dividir()"alt=" botao de Dividir a conta "> Dividir</button>
+    <dialog id="dialog">
+    <h3 class="center" id="resul"></h3>
+    <button class="center" id="fechar-modal" > Voltar </button>
+
+    </dialog>
   </div>
+  
   </body>
+  <footer>
+
+  </footer>
+</html>
