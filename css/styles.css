@@ -15,7 +15,10 @@
         background-color:rgba(0, 0, 0, 0.603);
        }
 
-
+       .share-btn img {
+        width: 20px;
+        height: 20px;
+    }
 
 
 
@@ -117,6 +120,44 @@ dialog{
     align-items: center;
     margin: 0% ;
 }
+
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
+    padding: 10px; /* Adiciona um pouco de espaço ao redor dos botões */
+}
+
+.share-btn {
+    background-color: #3a3a3ac7;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Adiciona uma transição suave */
+}
+
+.share-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.share-btn:hover {
+    background-color: #d3c18b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
 
 /*animaao do h1*/
 .cssanimation, .cssanimation span {

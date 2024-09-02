@@ -28,6 +28,25 @@ function Dividir() {
     // Display the result
     document.getElementById("resul").innerHTML ="cada uma das "+ pessoas +" pessoas ira pagar R$: "+ resultado.toFixed(2);
 
+
+
+    document.getElementById('whatsapp-btn').addEventListener('click', function() {
+        const text = encodeURIComponent("cada uma das "+ pessoas +" pessoas ira pagar R$: "+ resultado.toFixed(2));
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://api.whatsapp.com/send?text=${text}%20${url}`, '_blank');
+    });
+    
+    document.getElementById('telegram-btn').addEventListener('click', function() {
+        const text = encodeURIComponent("cada uma das "+ pessoas +" pessoas ira pagar R$: "+ resultado.toFixed(2));
+        const url = encodeURIComponent(window.location.href);
+        window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
+    });
+
+
+
+
+
+
     const dialog = document.getElementById("dialog");
    
     dialog.showModal();
@@ -39,7 +58,13 @@ function Dividir() {
     })
 }
 
-
+document.addEventListener("keypress", function(e) {
+    if(e.key === 'Enter') {
+    
+        Dividir();
+    
+    }
+});
 
 
 
