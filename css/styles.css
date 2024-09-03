@@ -102,8 +102,8 @@ button:hover{
     width: 5rem; 
 }
 dialog{
-    width: 50%;
-    height: 40%;
+    width: 45%;
+    height: 35%;
     scroll-behavior: smooth;
     background-color: #3a3a3ac7;  
     border-radius: 5%;

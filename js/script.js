@@ -26,7 +26,7 @@ function Dividir() {
     const resultado = valor / pessoas;
 
     // Display the result
-    document.getElementById("resul").innerHTML ="cada uma das "+ pessoas +" pessoas ira pagar R$: "+ resultado.toFixed(2);
+    document.getElementById("resul").innerHTML ="cada uma das "+ pessoas +" pessoas ira pagar R$:"+ resultado.toFixed(2);
 
 
 
