@@ -3,8 +3,8 @@
 
 @media screen and (max-width: 600px){
     dialog{
-        width: 30%;
-        height: 10%;
+        width: 50%;
+        height: 40%;
         scroll-behavior: smooth;
         background-color: #3a3a3ac7;  
         border-radius: 5%;
@@ -41,7 +41,7 @@ h2{
     color: #d3c18b;
     font-family: 'Fira Sans', sans-serif;
     font-size: x-large;
-    
+   
 }
 h3{
     font-family: 'Fira Sans', sans-serif;
