@@ -3,8 +3,8 @@
 
 @media screen and (max-width: 600px){
     dialog{
-        width: 50%;
-        height: 40%;
+        width: 70%;
+        height: 50%;
         scroll-behavior: smooth;
         background-color: #3a3a3ac7;  
         border-radius: 5%;
@@ -102,8 +102,8 @@ button:hover{
     width: 5rem; 
 }
 dialog{
-    width: 40%;
-    height: 30%;
+    width: 50%;
+    height: 40%;
     scroll-behavior: smooth;
     background-color: #3a3a3ac7;  
     border-radius: 5%;
