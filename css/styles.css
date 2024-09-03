@@ -1,28 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap');
 
 
-@media screen and (max-width: 600px){
-    dialog{
-        width: 70%;
-        height: 50%;
-        scroll-behavior: smooth;
-        background-color: #3a3a3ac7;  
-        border-radius: 5%;
-        border-color: #d3c18b;
-        overflow: auto;
-      }
-       dialog::backdrop{
-        background-color:rgba(0, 0, 0, 0.603);
-       }
 
-       .share-btn img {
-        width: 1rem;
-        height: 1rem;
-    }
-
-
-
-    }
 
 
 html{
@@ -103,7 +82,7 @@ button:hover{
 }
 dialog{
     width: 45%;
-    height: 35%;
+    height: 40%;
     scroll-behavior: smooth;
     background-color: #3a3a3ac7;  
     border-radius: 5%;
@@ -125,17 +104,17 @@ dialog{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+   
     flex-wrap: wrap; /* Permite que os botões quebrem linha em telas menores */
-    padding: 10px; /* Adiciona um pouco de espaço ao redor dos botões */
+    padding: 5%; /* Adiciona um pouco de espaço ao redor dos botões */
 }
 
 .share-btn {
     background-color: #3a3a3ac7;
     border: none;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 8%;
+    border-radius: 2px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
@@ -144,8 +123,8 @@ dialog{
 }
 
 .share-btn img {
-    width: 3rem;
-    height:3rem;
+    width: 2rem;
+    height:2rem;
 }
 
 
