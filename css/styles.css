@@ -7,17 +7,17 @@
 html{
     margin-top: 5%;
     scroll-behavior: smooth;
-    background-color: #3a3a3ac7;
+    background-color: #333333;
    
  
  }
  
 
 h1{
-    color: white;
+    color:#98FF98;
 }
 h2{
-    color: #d3c18b;
+    color:  aliceblue;
     font-family: 'Fira Sans', sans-serif;
     font-size: x-large;
    
@@ -63,16 +63,16 @@ button{
     font-family: 'Fira Sans', sans-serif;
     font-size: x-large;
     font-size: x-large;
-    background-color: black;
-    color: white;
+    background-color: #98FF98;
+    color: #333333;
     cursor: pointer; /* Pointer cursor on hover */
     border-radius: 5px; /* Rounded corners */
     
 }
 button:hover{
     transition: background-color 0.3s;
-    background-color: #d3c18b;
-    color: black;
+    background-color: #D3D3D3;
+    color: #98FF98;
 }
 
 .img{
