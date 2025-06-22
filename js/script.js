@@ -31,15 +31,16 @@ document.getElementById("resul").innerHTML = "Cada uma das " + pessoas + " pesso
 // Botão de compartilhamento no WhatsApp
 document.getElementById('whatsapp-btn').addEventListener('click', function() {
     const text = encodeURIComponent("Cada uma das " + pessoas + " pessoas irá pagar R$" + resultado.toFixed(2));
-    window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+    const site = encodeURIComponent("https://bora-rachar.netlify.app/");
+    window.open(`https://api.whatsapp.com/send?text=${text}%20${site}`, '_blank');
 });
 
 // Botão de compartilhamento no Telegram
 document.getElementById('telegram-btn').addEventListener('click', function() {
     const text = encodeURIComponent("Cada uma das " + pessoas + " pessoas irá pagar R$" + resultado.toFixed(2));
-    window.open(`https://t.me/share/url?text=${text}`, '_blank');
+    const site = encodeURIComponent("https://bora-rachar.netlify.app/");
+    window.open(`https://t.me/share/url?url=${site}&text=${text}`, '_blank');
 });
-
 // Abrir modal
 const dialog = document.getElementById("dialog");
 dialog.showModal();
