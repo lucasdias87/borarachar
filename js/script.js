@@ -25,37 +25,30 @@ function Dividir() {
     // Perform division
     const resultado = valor / pessoas;
 
-    // Display the result
-    document.getElementById("resul").innerHTML ="cada uma das "+ pessoas +" pessoas ira pagar "+"R$"+ resultado.toFixed(2);
+  // Exibir o resultado na tela
+document.getElementById("resul").innerHTML = "Cada uma das " + pessoas + " pessoas irá pagar R$" + resultado.toFixed(2);
 
+// Botão de compartilhamento no WhatsApp
+document.getElementById('whatsapp-btn').addEventListener('click', function() {
+    const text = encodeURIComponent("Cada uma das " + pessoas + " pessoas irá pagar R$" + resultado.toFixed(2));
+    window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+});
 
+// Botão de compartilhamento no Telegram
+document.getElementById('telegram-btn').addEventListener('click', function() {
+    const text = encodeURIComponent("Cada uma das " + pessoas + " pessoas irá pagar R$" + resultado.toFixed(2));
+    window.open(`https://t.me/share/url?text=${text}`, '_blank');
+});
 
-    document.getElementById('whatsapp-btn').addEventListener('click', function() {
-        const text = encodeURIComponent("cada uma das "+ pessoas +" pessoas ira pagar "+"R$"+ resultado.toFixed(2))+"";
-      
-        window.open(`https://api.whatsapp.com/send?text=${text}%20${url}`, '_blank');
-    });
-    
-    document.getElementById('telegram-btn').addEventListener('click', function() {
-        const text = encodeURIComponent("cada uma das "+ pessoas +" pessoas ira pagar "+"R$:"+ resultado.toFixed(2))+"";
-      
-        window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
-    });
+// Abrir modal
+const dialog = document.getElementById("dialog");
+dialog.showModal();
 
-
-
-
-
-
-    const dialog = document.getElementById("dialog");
-   
-    dialog.showModal();
-
-    const fecharmodal=document.getElementById("fechar-modal"); 
-
-    fecharmodal.addEventListener('click',()=>{
-      dialog.close();
-    })
+// Fechar modal
+const fecharmodal = document.getElementById("fechar-modal");
+fecharmodal.addEventListener('click', () => {
+    dialog.close();
+});
 }
 
 document.addEventListener("keypress", function(e) {
