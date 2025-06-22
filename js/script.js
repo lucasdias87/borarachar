@@ -26,19 +26,19 @@ function Dividir() {
     const resultado = valor / pessoas;
 
     // Display the result
-    document.getElementById("resul").innerHTML ="cada uma das "+ pessoas +" pessoas ira pagar "+"R$:"+ resultado.toFixed(2);
+    document.getElementById("resul").innerHTML ="cada uma das "+ pessoas +" pessoas ira pagar "+"R$"+ resultado.toFixed(2);
 
 
 
     document.getElementById('whatsapp-btn').addEventListener('click', function() {
-        const text = encodeURIComponent("cada uma das "+ pessoas +" pessoas ira pagar "+"R$:"+ resultado.toFixed(2))+"";
-        const url = encodeURIComponent(window.location.href);
+        const text = encodeURIComponent("cada uma das "+ pessoas +" pessoas ira pagar "+"R$"+ resultado.toFixed(2))+"";
+        const url = encodeURIComponent(window.location);
         window.open(`https://api.whatsapp.com/send?text=${text}%20${url}`, '_blank');
     });
     
     document.getElementById('telegram-btn').addEventListener('click', function() {
         const text = encodeURIComponent("cada uma das "+ pessoas +" pessoas ira pagar "+"R$:"+ resultado.toFixed(2))+"";
-        const url = encodeURIComponent(window.location.href);
+        const url = encodeURIComponent(window.location);
         window.open(`https://t.me/share/url?url=${url}&text=${text}`, '_blank');
     });
 
